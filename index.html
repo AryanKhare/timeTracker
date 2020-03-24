@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="discription" content="Tracker browsing status">
+        <meta name="keywords" content="time, tracker, web, activity, clock, countdown">
+        <meta name="author" content="Khare Brothers">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Time Tracker </title>
+
+        <link href="style/web_actions.css" rel="stylesheet">
+        <link href="style/chart.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2:500&display=swap" rel="stylesheet">
+
+        <script src="scripts/#"> </script>
+    </head>
+
+    <body>
+        <!-- Heading informations -->
+        <header>
+            <!-- Title -->
+            <div id="extensionTitle"> Time Tracker </div>
+            
+            <nav>   <!-- In Page Navigations -->
+                <a class="buttons" id="active"> Today </a>      <!-- may have to swap the id and the class -->
+                <a class="buttons"> All Time </a>
+            </nav>
+
+            <div class="panel"> Overall Stats </div>
+            <div class="stats">
+                <div class="block">
+                    <div> First Day </div>
+                    <div class="value-block" id="firstDay"></div>
+                </div>
+                <div class="block">
+                    <div> Last Day </div>
+                    <div class="value-block" id="lastDay"></div>
+                </div>
+                <div class="block">
+                    <div> Active Days </div>
+                    <div class="value-block" id="activeDays"></div>
+                </div>
+                <div class="block">
+                    <div> Days in Total </div>
+                    <div class="value-block" id="daysInTotal"></div>
+                </div>
+                <div class="block">
+                    <div> Today </div>
+                    <div class="value-block" id="today"></div>
+                </div>
+                <div class="block">
+                    <div> All-Time </div>
+                    <div class="value-block" id="allTime"></div>
+                </div>
+                <div class="block">
+                    <div> Most active day </div>
+                    <div class="value-block" id="mostActiveDay"></div>
+                </div>
+                <div class="block">
+                    <div> Most inactive Day </div>
+                    <div class="value-block" id="mostInactiveDay"></div>
+                </div>
+            </div>
+            
+            <div class="panel"> Common Chart </div>
+        </header>
+
+        <section id="labelForTimeInterval" class="warning hide">
+            <label> Only time intervals greater than 3 seconds are shown here</label>
+        </section>
+
+        <section id="chart">
+            
+        </section>
+
+    </body>
+</html>
