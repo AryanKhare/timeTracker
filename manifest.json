@@ -1,0 +1,46 @@
+{
+    "manifest_version": 1,
+
+    "name": "Time Tracker",
+    "version": "1.0.0",
+    "minimum_chrome_version": "35",
+
+    "description": "Track and limit your internet surffing and usage.",
+
+    "icons": {
+        "16":   "icons/16X16.png",
+        "32":   "icons/32x32.png",
+        "48":   "icons/48x48.png",
+        "128":   "icons/128x128.png"
+    },
+
+    "permissions":[
+        "tabs",
+        "activeTab",
+        "storage",
+        "idle",
+        "webNavigation",
+        "unlimitedStorage",
+        "chrome://favicon/*"
+    ],
+
+    "optional_permissions":[
+        "notifications"
+    ],
+
+    "offline_enabled": false,
+    "background":{
+        "scripts": [
+
+        ],
+        "persistent": false
+    },
+
+    "browser_actino": {
+        "default_popup": "index.html",
+        "default_title": "Time Tracker",
+        "default_icon": "icons/48x48.png"
+    },
+
+    "options_page": "options.html"
+}
